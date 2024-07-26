@@ -2,6 +2,8 @@
 
 This script was written to automate the process of attempting logins on a given URL using a list of usernames and passwords. The primary motivation behind developing this script was to find a way to bypass anti-CSRF (Cross-Site Request Forgery) tokens that are often used to protect web forms from unauthorized actions. By using Selenium for browser automation, this script can efficiently perform login attempts and identify successful logins, even in the presence of anti-CSRF tokens. I know there are other ways to do this say in burp or caido or zap but doing it this way makes more sense to me. 
 
+This script was only tested on RoundCube Email service 1.6.7 and worked great. I can not say it fully works for older versions but I dont see why not. https://github.com/roundcube/roundcubemail
+
 ## Disclaimer
 
 **This script is intended for educational purposes only. The author does not condone or support any illegal or malicious activities. Use this script responsibly and only on systems you have explicit permission to test. The author is not responsible for any misuse or damage caused by this script.**
