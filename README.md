@@ -1,6 +1,10 @@
 # Brutium
 
-This script was written to automate the process of attempting logins on a given URL using a list of usernames and passwords. The primary motivation behind developing this script was to find a way to bypass anti-CSRF (Cross-Site Request Forgery) tokens that are often used to protect web forms from unauthorized actions. By using Selenium for browser automation, this script can efficiently perform login attempts and identify successful logins, even in the presence of anti-CSRF tokens.
+This script was written to automate the process of attempting logins on a given URL using a list of usernames and passwords. The primary motivation behind developing this script was to find a way to bypass anti-CSRF (Cross-Site Request Forgery) tokens that are often used to protect web forms from unauthorized actions. By using Selenium for browser automation, this script can efficiently perform login attempts and identify successful logins, even in the presence of anti-CSRF tokens. I know there are other ways to do this say in burp or caido or zap but doing it this way makes more sense to me. 
+
+## Disclaimer
+
+**This script is intended for educational purposes only. The author does not condone or support any illegal or malicious activities. Use this script responsibly and only on systems you have explicit permission to test. The author is not responsible for any misuse or damage caused by this script.**
 
 ## Requirements
 
@@ -17,6 +21,10 @@ pip install selenium webdriver_manage
 ```
 ## Usage
 `python login_script.py --url <login_url> --username_file <path_to_username_file> --password_file <path_to_password_file> --login_button <button_locator> --presence_of_element <success_element_locator> --error_message_locator <error_element_locator> --error_message_string <error_message> [--headless]`
+
+### Threading
+
+The script uses threading to perform multiple login attempts concurrently, which speeds up the process. The number of concurrent threads is limited to 10 to prevent overwhelming the server but you can set it to anything that suits your need.
 
 ## Arguments
 - --url: The login URL.
@@ -43,3 +51,17 @@ Locators are used to identify elements on the web page. Common locator types are
 
 ![brutium_example](https://github.com/user-attachments/assets/32f07bde-fb70-4d33-a764-53d5b4d255ca)
 
+## Future Improvement Ideas
+
+- Add proxy support for spoofing IP addresses
+
+# RoundCube_Email_BruteForce.py
+
+Created specifically for Bruteforcing Roundcube eamail service
+
+## Usage
+
+- Change URL to the desired roundcube URL you are trying to attack
+- Change the the username and password files to whatever you desire
+- Run the script
+- You can also change the number of threads to run, default is set to 10
