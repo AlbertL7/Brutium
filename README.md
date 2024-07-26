@@ -22,7 +22,7 @@ Install the required packages:
 pip install selenium webdriver_manage
 ```
 ## Usage
-`python brutium.py --url <login_url> --username_file <path_to_username_file> --password_file <path_to_password_file> --login_button <button_locator> --presence_of_element <success_element_locator> --error_message_locator <error_element_locator> --error_message_string <error_message> [--headless]`
+`python3 brutium.py --url <login_url> --username_file <path_to_username_file> --password_file <path_to_password_file> --login_button <button_locator> --presence_of_element <success_element_locator> --error_message_locator <error_element_locator> --error_message_string <error_message> [--headless]`
 
 ### Threading
 
