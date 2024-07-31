@@ -53,6 +53,11 @@ Locators are used to identify elements on the web page. Common locator types are
 
 ![brutium_example](https://github.com/user-attachments/assets/32f07bde-fb70-4d33-a764-53d5b4d255ca)
 
+# Simple Troublshooting
+
+- Make sure webdriver manager is up to date `pip install --upgrade webdriver_manager`
+- Clear selenium cache `rm -rf ~/.cache/selenium`
+
 ## Future Improvement Ideas
 
 - Add proxy support for spoofing IP addresses
